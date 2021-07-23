@@ -1,0 +1,61 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #9f2ed8;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 10px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px purple;
+}
+
+#fnum {
+    border: 1px solid #222;
+    border-radius: 5px;
+    font-size: medium;
+    padding: 3px 7px;
+}
+
+.botao {
+    border: none;
+    border-radius: 8px;
+    background-color: #9f2ed8;
+    color: #ffffff;
+    font-size: medium;
+    padding: 5px 10px;
+    margin: 5px 10px;
+}
+
+select#flist {
+    border: 1px solid #222;
+    border-radius: 10px;
+    font-size: medium;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    width: 190px;
+}
+
+#res {
+    margin: 10px 10px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+a {
+    color: #ffffff
+}

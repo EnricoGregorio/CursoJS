@@ -1,0 +1,64 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(70deg, #9f2ed8, #6f0ed0);
+    background-attachment: fixed;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+#dados {
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+#but {
+    background-color: #6f0ed0;
+    color: #FFFFFF;
+    border: none;
+    padding: 7px 14px;
+    margin-left: 13%;
+}
+
+label {
+    font-size: medium;
+}
+
+#res {
+    font-size: large;
+    margin: 10px 10px;
+}
+
+input {
+    border: 1px solid #222;
+    border-radius: 5px;
+    padding: 5px 8px;
+    font-size: medium;
+    display: grid;
+    place-items: center;
+    
+}
+
+section {
+    background-color: white;
+    border-radius: 10px ;
+    padding: 15px 10px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px purple;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+a {
+    color: #ffffff
+}
