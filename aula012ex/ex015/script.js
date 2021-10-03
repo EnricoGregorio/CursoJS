@@ -1,18 +1,18 @@
 function verificar() {
-    var data = new Date()
-    var ano = data.getFullYear()
-    var fano = window.document.getElementById('txtano')
-    var res = document.querySelector('div#res')
+    let data = new Date()
+    let ano = data.getFullYear()
+    let fano = window.document.getElementById('txtano')
+    let res = document.querySelector('div#res')
 
     if (fano.value < 1920 || Number(fano.value) > ano) {
         window.alert('[ERRO] Verifique os dados e tente novamente.')
     } else if (fano.value == ano) {
         window.alert('COMO VOCÊ CONSEGUE DIGITAR COM MENOS DE 1 ANO DE VIDA?!')
     } else {
-        var fsex = document.getElementsByName('radsex')
-        var idade = ano - Number(fano.value)
-        var genero = ''
-        var img = document.createElement('img')
+        let fsex = document.getElementsByName('radsex')
+        let idade = ano - Number(fano.value)
+        let genero = ''
+        let img = document.createElement('img')
         img.setAttribute('id', 'foto')
         if (fsex[0].checked) {
             if (idade >= 1 && idade <= 11) {
