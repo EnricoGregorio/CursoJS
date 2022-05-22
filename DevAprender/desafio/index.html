@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio DevAprender</title>
+    <script src="./arquivo.js"></script>
+</head>
+
+<body>
+    <main>
+        <h1>Desta VIP</h1>
+        <form action="" method="get">
+            <p>Bem-vindo(a) senhor(a)</p>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+            <p>Quem te convidou para essa festa?</p>
+            <input type="text" name="dono" id="dono" placeholder="Quem te convidou?" required>
+            <input type="submit" id="submit" value="Verificar se posso entrar" onclick="verificarConvidado()">
+        </form>
+        <h2>Você está permitido a entrar?</h2>
+        <p><span id="permissao">Pesquisando</span></p>
+    </main>
+</body>
+
+</html>
