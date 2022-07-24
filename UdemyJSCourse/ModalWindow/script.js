@@ -27,7 +27,7 @@ overlay.addEventListener('click', closeModal);
 btnCloseModal.addEventListener('click', closeModal);
 
 // Evento para fechar a janela com alguma tecla pressionada.
-document.addEventListener('keydown', (e) => {
+document.addEventListener('keydown', function (e) {
     // Quando a tecla 'Esc' for pressionada e quando a janela estiver aberta, feche-a.
     if (e.code === 'Escape' && !modal.classList.contains('hidden')) {
         closeModal();
