@@ -9,31 +9,36 @@ let score = 20;
 // Valor inicial da maior pontuação.
 let highscore = 0;
 
+// Função para mostrar mensagem.
+function showMessage(msg) {
+    return document.querySelector('.message').textContent = msg;
+}
+
 function VerifyNumber(number) {
     // Enquanto a pontuação ainda não zerou.
     if (score > 1) {
 
         // Quando o número inserido não está entre 1 e 20.
         if (!number || number > 20) {
-            document.querySelector('.message').textContent = '⛔ Número Inválido!';
+            showMessage('⛔ Número Inválido!');
             score--;
             document.querySelector('.score').textContent = score;
 
             // Quando o número inserido é maior ao correto.
         } else if (number > secretNumber) {
-            document.querySelector('.message').textContent = '📉 Muito Alto!';
+            showMessage('📉 Muito Alto!');
             score--;
             document.querySelector('.score').textContent = score;
 
             // Quando o número inserido é menor ao correto.
         } else if (number < secretNumber) {
-            document.querySelector('.message').textContent = '📈 Muito Baixo!';
+            showMessage('📈 Muito Baixo!');
             score--;
             document.querySelector('.score').textContent = score;
 
             // Quando o número inserido é o correto.
         } else {
-            document.querySelector('.message').textContent = '🎉 Número Correto!';
+            showMessage('🎉 Número Correto!');
             document.querySelector('body').style.backgroundColor = '#0e8f48';
             document.querySelector('.number').textContent = secretNumber;
             document.querySelector('.number').style.width = '30rem';
@@ -47,7 +52,7 @@ function VerifyNumber(number) {
 
         // Quando a pontuação chega a zero.
     } else {
-        document.querySelector('.message').textContent = '💥 Você Perdeu!';
+        showMessage('💥 Você Perdeu!');
         document.querySelector('.score').textContent = 0;
     }
 }
@@ -67,7 +72,7 @@ document.querySelector('.again').addEventListener('click', function () {
     document.querySelector('body').style.backgroundColor = '#222';
     document.querySelector('.guess').value = '';
     document.querySelector('.score').textContent = score;
-    document.querySelector('.message').textContent = 'Comece a advinhar...';
+    showMessage('Comece a advinhar...');
 });
 
 // Mesmos eventos, mas agora acontecem quando a tecla Enter ou R são pressionadas.
@@ -84,6 +89,6 @@ document.addEventListener('keydown', (event) => {
         document.querySelector('body').style.backgroundColor = '#222';
         document.querySelector('.guess').value = '';
         document.querySelector('.score').textContent = score;
-        document.querySelector('.message').textContent = 'Comece a advinhar...';
+        showMessage('Comece a advinhar...');
     }
 }, false);
